@@ -5,7 +5,7 @@ $device_id = $_GET['device_id'];
 //echo $device_id;
 
   
-  if(isset($_POST['card_id']) &&  $card_id != NULL && $card_id_len > "2"){
+  if(isset($_POST['card_id']) &&  ($_POST['card_id']) != NULL && ($_POST['card_id']) > "2"){
      $device_id=$_GET['device_id'];
       $card_id=$_POST['card_id'];
       $card_id_original = $card_id; // Full RFID number at the back of the card
